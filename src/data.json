@@ -1,0 +1,306 @@
+[
+  {
+    "id": 1,
+    "imagemLink": "../images/hioki.png",
+    "titulo": "Hioki Sushi",
+    "nota": 4.9,
+    "descricao": "Peça já o melhor da culinária japonesa no conforto da sua casa! Sushis frescos, sashimis deliciosos e pratos quentes irresistíveis. Entrega rápida, embalagens cuidadosas e qualidade garantida.Experimente o Japão sem sair do lar com nosso delivery!",
+    "tag": ["Destaque da Semana", "Japonesa"],
+    "rota": "hioki",
+    "cardapio": [
+      {
+        "imagemMenu": "https://placehold.jp/304x167.png",
+        "nomePrato": "Sushi Combo",
+        "descricaoPrato": "Variedade de sushis frescos com atum, salmão e peixe branco.",
+        "codigoPrato": "prato1",
+        "precoPrato": 50
+      },
+      {
+        "imagemMenu": "https://placehold.jp/304x167.png",
+        "nomePrato": "Sashimi Deluxe",
+        "descricaoPrato": "Fatias finas de peixe fresco, servidas com molho de soja e wasabi.",
+        "codigoPrato": "prato2",
+        "precoPrato": 60
+      },
+      {
+        "imagemMenu": "https://placehold.jp/304x167.png",
+        "nomePrato": "Tempura Misto",
+        "descricaoPrato": "Camarões e legumes fritos em uma massa leve e crocante.",
+        "codigoPrato": "prato3",
+        "precoPrato": 40
+      },
+      {
+        "imagemMenu": "https://placehold.jp/304x167.png",
+        "nomePrato": "Udon",
+        "descricaoPrato": "Macarrão grosso em caldo quente com tempura e cebolinha.",
+        "codigoPrato": "prato4",
+        "precoPrato": 35
+      },
+      {
+        "imagemMenu": "https://placehold.jp/304x167.png",
+        "nomePrato": "Yakitori",
+        "descricaoPrato": "Espetinhos de frango grelhado com molho tare.",
+        "codigoPrato": "prato5",
+        "precoPrato": 30
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "imagemLink": "../images/ladolcevita.png",
+    "titulo": "La Dolce Vita Trattoria",
+    "nota": 4.6,
+    "descricao": "A La Dolce Vita Trattoria leva a autêntica cozinha italiana até você! Desfrute de massas caseiras, pizzas deliciosas e risotos incríveis, tudo no conforto do seu lar. Entrega rápida, pratos bem embalados e sabor inesquecível. Peça já!",
+    "tag": ["Italiana"],
+    "rota": "ladolcevita",
+    "cardapio": [
+      {
+        "imagemMenu": "https://placehold.jp/304x167.png",
+        "nomePrato": "Carbonara Clássica",
+        "descricaoPrato": "Espaguete cremoso com molho de ovos, pancetta crocante, parmesão e pimenta preta.",
+        "codigoPrato": "prato1",
+        "precoPrato": 45
+      },
+      {
+        "imagemMenu": "https://placehold.jp/304x167.png",
+        "nomePrato": "Lasagna alla Bolognese",
+        "descricaoPrato": "Camadas de massa fresca com molho à bolonhesa, bechamel e queijo gratinado.",
+        "codigoPrato": "prato2",
+        "precoPrato": 50
+      },
+      {
+        "imagemMenu": "https://placehold.jp/304x167.png",
+        "nomePrato": "Ravioli di Ricotta e Spinaci",
+        "descricaoPrato": "Raviolis recheados com ricota e espinafre, servidos com molho de manteiga e sálvia.",
+        "codigoPrato": "prato3",
+        "precoPrato": 40
+      },
+      {
+        "imagemMenu": "https://placehold.jp/304x167.png",
+        "nomePrato": "Gnocchi al Pesto",
+        "descricaoPrato": "Nhoque macio de batata com pesto de manjericão, pinoli e parmesão.",
+        "codigoPrato": "prato4",
+        "precoPrato": 35
+      },
+      {
+        "imagemMenu": "https://placehold.jp/304x167.png",
+        "nomePrato": "Risotto ai Funghi",
+        "descricaoPrato": "Arroz arbóreo cremoso com cogumelos porcini, parmesão e trufas negras.",
+        "codigoPrato": "prato5",
+        "precoPrato": 55
+      },
+      {
+        "imagemMenu": "https://placehold.jp/304x167.png",
+        "nomePrato": "Pollo alla Parmigiana",
+        "descricaoPrato": "Peito de frango empanado com molho de tomate, mussarela derretida e parmesão.",
+        "codigoPrato": "prato6",
+        "precoPrato": 48
+      },
+      {
+        "imagemMenu": "https://placehold.jp/304x167.png",
+        "nomePrato": "Tagliatelle al Tartufo",
+        "descricaoPrato": "Tagliatelle fresco com molho de trufas, parmesão e um toque de azeite de trufa.",
+        "codigoPrato": "prato7",
+        "precoPrato": 60
+      },
+      {
+        "imagemMenu": "https://placehold.jp/304x167.png",
+        "nomePrato": "Pizza Diavola",
+        "descricaoPrato": "Pizza de massa fina com molho de tomate, mussarela, salame picante e pimentões.",
+        "codigoPrato": "prato8",
+        "precoPrato": 38
+      },
+      {
+        "imagemMenu": "https://placehold.jp/304x167.png",
+        "nomePrato": "Tiramisu Tradicional",
+        "descricaoPrato": "Camadas de biscoitos de champanhe embebidos em café, mascarpone cremoso e cacau.",
+        "codigoPrato": "prato9",
+        "precoPrato": 25
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "imagemLink": "../images/chinese.webp",
+    "titulo": "Jade Imperial",
+    "nota": 5,
+    "descricao": "Descubra a sofisticação e a riqueza da culinária chinesa no Jade Imperial. Com pratos autênticos que vão do delicado dim sum ao saboroso pato laqueado, nossa cozinha é um verdadeiro banquete para os sentidos, utilizando técnicas tradicionais e ingredientes frescos para proporcionar uma experiência gastronômica inesquecível.",
+    "tag": ["Oriental"],
+    "rota": "jadeimperial",
+    "cardapio": [
+      {
+        "imagemMenu": "https://placehold.jp/304x167.png",
+        "nomePrato": "Dim Sum",
+        "descricaoPrato": "Seleção de bolinhos de massa fina recheados com carne e vegetais.",
+        "codigoPrato": "prato1",
+        "precoPrato": 40
+      },
+      {
+        "imagemMenu": "https://placehold.jp/304x167.png",
+        "nomePrato": "Pato Laqueado",
+        "descricaoPrato": "Pato marinado e assado com pele crocante, servido com panquecas e molho hoisin.",
+        "codigoPrato": "prato2",
+        "precoPrato": 80
+      },
+      {
+        "imagemMenu": "https://placehold.jp/304x167.png",
+        "nomePrato": "Frango Kung Pao",
+        "descricaoPrato": "Frango picante salteado com amendoins, pimentões e pimenta seca.",
+        "codigoPrato": "prato3",
+        "precoPrato": 50
+      },
+      {
+        "imagemMenu": "https://placehold.jp/304x167.png",
+        "nomePrato": "Chow Mein",
+        "descricaoPrato": "Macarrão salteado com vegetais frescos e molho de soja.",
+        "codigoPrato": "prato4",
+        "precoPrato": 35
+      },
+      {
+        "imagemMenu": "https://placehold.jp/304x167.png",
+        "nomePrato": "Rolinhos Primavera",
+        "descricaoPrato": "Rolinhos crocantes recheados com vegetais frescos.",
+        "codigoPrato": "prato5",
+        "precoPrato": 25
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "imagemLink": "../images/indonesian.jpg",
+    "titulo": "Bali Sabor",
+    "nota": 4.9,
+    "descricao": "Mergulhe na diversidade e exotismo da cozinha indonésia no Bali Sabor. Oferecemos uma seleção de pratos autênticos que capturam a essência das ilhas, com uso generoso de especiarias aromáticas, leite de coco e frutos do mar frescos, proporcionando uma jornada culinária que celebra a rica herança cultural da Indonésia.",
+    "tag": ["Oriental"],
+    "rota": "balisabor",
+    "cardapio": [
+      {
+        "imagemMenu": "https://placehold.jp/304x167.png",
+        "nomePrato": "Nasi Goreng",
+        "descricaoPrato": "Arroz frito indonésio com camarão, frango, ovo e vegetais.",
+        "codigoPrato": "prato1",
+        "precoPrato": 45
+      },
+      {
+        "imagemMenu": "https://placehold.jp/304x167.png",
+        "nomePrato": "Satay de Frango",
+        "descricaoPrato": "Espetinhos de frango grelhado com molho de amendoim.",
+        "codigoPrato": "prato2",
+        "precoPrato": 35
+      },
+      {
+        "imagemMenu": "https://placehold.jp/304x167.png",
+        "nomePrato": "Gado-Gado",
+        "descricaoPrato": "Salada de vegetais frescos com molho de amendoim.",
+        "codigoPrato": "prato3",
+        "precoPrato": 30
+      },
+      {
+        "imagemMenu": "https://placehold.jp/304x167.png",
+        "nomePrato": "Rendang",
+        "descricaoPrato": "Carne de boi cozida lentamente com especiarias aromáticas e leite de coco.",
+        "codigoPrato": "prato4",
+        "precoPrato": 60
+      },
+      {
+        "imagemMenu": "https://placehold.jp/304x167.png",
+        "nomePrato": "Mie Goreng",
+        "descricaoPrato": "Macarrão frito com vegetais frescos e proteína à escolha.",
+        "codigoPrato": "prato5",
+        "precoPrato": 40
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "imagemLink": "../images/mexican.webp",
+    "titulo": "El Sombrero",
+    "nota": 4.8,
+    "descricao": "Viva a paixão e a vivacidade do México no El Sombrero. Nossos pratos são uma festa de cores e sabores, com tacos, enchiladas e guacamole feitos com ingredientes frescos e autênticos. Cada mordida é uma celebração da rica tradição culinária mexicana, onde o picante, o doce e o salgado se encontram em perfeita harmonia.",
+    "tag": ["Tex-Mex"],
+    "rota": "elsombrero",
+    "cardapio": [
+      {
+        "imagemMenu": "https://placehold.jp/304x167.png",
+        "nomePrato": "Tacos al Pastor",
+        "descricaoPrato": "Tacos recheados com carne de porco marinada, abacaxi, cebola e coentro.",
+        "codigoPrato": "prato1",
+        "precoPrato": 30
+      },
+      {
+        "imagemMenu": "https://placehold.jp/304x167.png",
+        "nomePrato": "Guacamole",
+        "descricaoPrato": "Abacate amassado com tomate, cebola, coentro e limão.",
+        "codigoPrato": "prato2",
+        "precoPrato": 20
+      },
+      {
+        "imagemMenu": "https://placehold.jp/304x167.png",
+        "nomePrato": "Enchiladas de Frango",
+        "descricaoPrato": "Tortilhas recheadas com frango e cobertas com molho de tomate e queijo.",
+        "codigoPrato": "prato3",
+        "precoPrato": 35
+      },
+      {
+        "imagemMenu": "https://placehold.jp/304x167.png",
+        "nomePrato": "Burritos",
+        "descricaoPrato": "Tortilhas recheadas com carne, feijão, arroz, queijo e vegetais.",
+        "codigoPrato": "prato4",
+        "precoPrato": 40
+      },
+      {
+        "imagemMenu": "https://placehold.jp/304x167.png",
+        "nomePrato": "Quesadillas",
+        "descricaoPrato": "Tortilhas recheadas com queijo derretido e frango ou carne.",
+        "codigoPrato": "prato5",
+        "precoPrato": 28
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "imagemLink": "../images/Thai.webp",
+    "titulo": "Sabor Thai",
+    "nota": 4.4,
+    "descricao": "Experimente a harmonia e o equilíbrio da cozinha tailandesa no Sabor Thai. Nossos pratos combinam os quatro sabores essenciais – doce, ácido, salgado e picante – para criar uma sinfonia de sabores em cada refeição. Desde o clássico Pad Thai até o aromático curry verde, nossa culinária é uma ode à gastronomia tailandesa, preparada com ingredientes frescos e técnicas autênticas.",
+    "tag": ["Oriental"],
+    "rota": "saborthai",
+    "cardapio": [
+      {
+        "imagemMenu": "https://placehold.jp/304x167.png",
+        "nomePrato": "Pad Thai",
+        "descricaoPrato": "Macarrão de arroz salteado com camarão, tofu, amendoim, broto de feijão e limão.",
+        "codigoPrato": "prato1",
+        "precoPrato": 35
+      },
+      {
+        "imagemMenu": "https://placehold.jp/304x167.png",
+        "nomePrato": "Curry Verde",
+        "descricaoPrato": "Curry picante com leite de coco, frango, berinjela e manjericão tailandês.",
+        "codigoPrato": "prato2",
+        "precoPrato": 40
+      },
+      {
+        "imagemMenu": "https://placehold.jp/304x167.png",
+        "nomePrato": "Tom Yum Goong",
+        "descricaoPrato": "Sopa picante de camarão com capim-limão, folhas de lima kaffir e coentro.",
+        "codigoPrato": "prato3",
+        "precoPrato": 30
+      },
+      {
+        "imagemMenu": "https://placehold.jp/304x167.png",
+        "nomePrato": "Som Tum",
+        "descricaoPrato": "Salada de mamão verde com amendoim, tomate, feijão e molho de tamarindo.",
+        "codigoPrato": "prato4",
+        "precoPrato": 25
+      },
+      {
+        "imagemMenu": "https://placehold.jp/304x167.png",
+        "nomePrato": "Khao Pad",
+        "descricaoPrato": "Arroz frito tailandês com pedaços de frango, ovo e vegetais.",
+        "codigoPrato": "prato5",
+        "precoPrato": 35
+      }
+    ]
+  }
+]
