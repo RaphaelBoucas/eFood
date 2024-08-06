@@ -10,7 +10,8 @@ export const HeaderDiv = styled.header`
   display: flex;
   //flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
+  
 
 `;
 
@@ -23,26 +24,33 @@ export const ImgHeader = styled.div`
     object-fit: cover;
     position: relative;
     filter: brightness(50%);
-  }
+  }`
 
-  p,
-  h3 {
-    color: ${cores.branco};
-    font-size: 32px;
-    position: absolute;
-    top: 25px;
-    left: 170px;
-  }
-  p {
-    font-weight: 100;
-    
-  }
-  h3 {
-    padding-top: 200px;
-    font-weight: 900;
-  }
+
+export const TextContainer = styled.div`
+  position: absolute;
+  top: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 1024px;
+  margin: 0 auto;
+  width: 100%;
+  
+  
 `;
 
+export const HeaderText = styled.p`
+  color: ${cores.branco};
+  font-size: 32px;
+  font-weight: 100;
+`;
+
+export const HeaderTitle = styled.h3`
+  color: ${cores.branco};
+  font-size: 32px;
+  font-weight: 900;
+  padding-top: 156.5px;
+`;
 
 export const Logo = styled.img`
   margin-top: 0px;
@@ -55,6 +63,10 @@ export const ParagrafoHeader = styled.p`
   a {
     text-decoratiom: none;
   }
+  display: flex;
+  //flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 `;
 
 export const StyledLink = styled(Link)`

@@ -9,6 +9,9 @@ import {
   ParagrafoHeader,
   ImgHeader,
   StyledLink,
+  TextContainer,
+  HeaderText,
+  HeaderTitle,
 } from "./styled";
 import { GlobalCSS } from '../../globalCss';
 
@@ -21,19 +24,23 @@ const HeaderProfile = ({img, tag, nome}) => {
     return (
       <>
         <GlobalCSS />
+
         <HeaderDiv>
-          <ParagrafoHeader>
-            <StyledLink to="/">Restaurantes</StyledLink>
-          </ParagrafoHeader>
-          <Logo src={logo} alt="" />
-          <ParagrafoHeader>{produtos.length} produto(s) no carrinho</ParagrafoHeader>
+          <div className='container'>
+            <ParagrafoHeader>
+              <StyledLink to="/">Restaurantes</StyledLink>
+              <Logo src={logo} alt="" />
+              {produtos.length} produto(s) no carrinho
+            </ParagrafoHeader>
+          </div>
         </HeaderDiv>
 
         <ImgHeader>
           <img src={img} alt={nome} />
-
-          <p>{tag.length > 0 ? tag[1] : tag}</p>
-          <h3>{nome}</h3>
+          <TextContainer>
+            <HeaderText>{tag.length > 0 ? tag[1] : tag}</HeaderText>
+            <HeaderTitle>{nome}</HeaderTitle>
+          </TextContainer>
         </ImgHeader>
       </>
     );

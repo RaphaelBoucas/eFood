@@ -16,6 +16,7 @@ export const Texto = styled.h2`
 color: ${cores.vermelho};
 margin-top: 120px;
 text-align: center;
+font-size: 36px;
 `
 
 export const Logo = styled.img`

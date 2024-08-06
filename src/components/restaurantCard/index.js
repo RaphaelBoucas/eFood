@@ -34,10 +34,10 @@ const RestaurantCard = ({imagemLink, tag, titulo, nota, descricao, rota}) => {
           <img src={estrela} alt="Avaliação" />
         </Avaliacao>
       </TextoSuperior>
-      <div>
+      {/* <div> */}
         <Texto>{descricao}</Texto>
         <Botao to={`/restaurant/${rota}`}>Saiba mais</Botao>
-      </div>
+      {/* </div> */}
     </Card>
   );
 }

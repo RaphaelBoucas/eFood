@@ -11,6 +11,10 @@ export const Card = styled.div`
   border: 1px solid ${cores.vermelho};
   color: ${cores.vermelho};
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom:8px;
   
 `;
 
@@ -32,21 +36,22 @@ export const Texto = styled.p`
   font-size: 14px;
   margin-left: 8px;
   margin-right: 8px;
-  margin-bottom: 16px;
+  margin-bottom: 20px;
 `;
 
 export const Botao = styled(Link)`
-color: ${cores.vermelhoClaro};
-background-color: ${cores.vermelho};
-border: none;
-padding: 4px 6px;
-font-size: 14px;
-font-weight: bold;
+  color: ${cores.vermelhoClaro};
+  background-color: ${cores.vermelho};
+  border: none;
+  padding: 4px 6px;
+  font-size: 14px;
+  font-weight: bold;
 
-margin-left: 8px;
-cursor: pointer;
-text-decoration: none;
-`
+  margin-left: 8px;
+  cursor: pointer;
+  text-decoration: none;
+  align-self: flex-start;
+`;
 export const TextoSuperior = styled.div`
 display: flex;
 align-items: center;

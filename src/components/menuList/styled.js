@@ -6,7 +6,7 @@ export const Lista = styled.div`
   height: 100%;
 
   overflow: auto;
-  padding-top: 80px;
+  padding-top: 55px;
 
   .container {
     display: grid;
