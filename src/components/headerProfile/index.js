@@ -38,7 +38,7 @@ const HeaderProfile = ({img, tag, nome}) => {
         <ImgHeader>
           <img src={img} alt={nome} />
           <TextContainer>
-            <HeaderText>{tag.length > 0 ? tag[1] : tag}</HeaderText>
+            <HeaderText>{tag}</HeaderText>
             <HeaderTitle>{nome}</HeaderTitle>
           </TextContainer>
         </ImgHeader>

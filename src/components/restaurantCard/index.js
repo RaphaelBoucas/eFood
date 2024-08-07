@@ -13,20 +13,23 @@ import {
 import estrela from '../../assets/estrela.png'
 
 
-const RestaurantCard = ({imagemLink, tag, titulo, nota, descricao, rota}) => {
-  const tagRender = tag.map((i) => (
-   
-      <div key={i}>{i}</div>
-   
-  ));
-
+const RestaurantCard = ({
+  imagemLink,
+  tag,
+  titulo,
+  nota,
+  descricao,
+  id,
+  destacado,
+}) => {
   return (
     <Card>
       <Imagem src={imagemLink} alt="Restaurante" />
       <Tag>
-        {tagRender ? tagRender : ""}
+        {destacado && <div>destacado</div>}
+        <div>{tag}</div>
       </Tag>
-      
+
       <TextoSuperior>
         <Titulo>{titulo}</Titulo>
         <Avaliacao>
@@ -35,11 +38,11 @@ const RestaurantCard = ({imagemLink, tag, titulo, nota, descricao, rota}) => {
         </Avaliacao>
       </TextoSuperior>
       {/* <div> */}
-        <Texto>{descricao}</Texto>
-        <Botao to={`/restaurant/${rota}`}>Saiba mais</Botao>
+      <Texto>{descricao}</Texto>
+      <Botao to={`/restaurant/${id}`}>Saiba mais</Botao>
       {/* </div> */}
     </Card>
   );
-}
+};
 
 export default RestaurantCard;
