@@ -14,6 +14,7 @@ const Root = () => {
       <Header />
       <RestaurantList />
       <Footer />
+
     </div>
   );
 };

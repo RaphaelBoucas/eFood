@@ -1,5 +1,6 @@
 import { useDispatch } from "react-redux";
 import { addItem } from "../../reducers/carrinhoSlice";
+import { abre, fecha } from "../../reducers/abreCarrinhoSlice"
 import { Card, Titulo, Texto, Botao, Imagem, Fade, Modal } from "./styled";
 import { useState } from "react";
 import fechar from '../../assets/close.svg'
@@ -15,11 +16,16 @@ const MenuCard = ({ foto, preco, id, nome, descricao, porcao }) => {
     function handleAdicionar() {
       dispatch(
         addItem({
-          restaurante: id,
-          prato: nome,
-          preco: preco,
-        })
+          foto,
+          preco,
+          id,
+          nome,
+          descricao,
+          porcao
+        }),
       );
+      dispatch(abre())
+      fechaModal()
     }
 
   function abreModal(card) {

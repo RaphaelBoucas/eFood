@@ -67,6 +67,9 @@ export const ParagrafoHeader = styled.p`
   //flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  span {
+    cursor: pointer;
+  }
 `;
 
 export const StyledLink = styled(Link)`

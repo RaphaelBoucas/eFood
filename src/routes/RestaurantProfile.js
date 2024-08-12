@@ -5,6 +5,8 @@ import {useParams } from 'react-router-dom'
 import Footer from '../components/footer';
 import MenuList from '../components/menuList';
 import HeaderProfile from '../components/headerProfile';
+import { useSelector } from 'react-redux';
+import Cart from '../components/cart';
 
 
 const RestaurantProfile = () => {
@@ -24,7 +26,8 @@ const RestaurantProfile = () => {
   // if (!restaurant){
   //     return <Error />
   // } 
-  
+    
+  const abreCarrinhoStatus = useSelector(state => state.abreCarrinho)
   return (
     <div>
       <HeaderProfile
@@ -34,6 +37,7 @@ const RestaurantProfile = () => {
       />
       <MenuList />
       <Footer />
+      {abreCarrinhoStatus && <Cart />}
     </div>
   );
 }

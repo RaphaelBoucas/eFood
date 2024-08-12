@@ -8,9 +8,13 @@ export const carrinhoSlice = createSlice({
     reducers: {
         addItem(state, action) {
             state.push(action.payload)
+        },
+        removeItem(state, action) {
+           return state.filter(item => item.id !== action.payload);
+           
         }
     }
 })
-export const { addItem } = carrinhoSlice.actions
+export const { addItem, removeItem } = carrinhoSlice.actions
 
 export default carrinhoSlice.reducer

@@ -2,33 +2,41 @@ import React, { useEffect, useState } from 'react'
 import { Lista } from './styled'
 import RestaurantCard from '../restaurantCard/index'
 import LoaderCircle from '../loaderCircle';
-
+import { useGetRestaurantsByIdQuery } from '../../api/api';
 
 
 const RestaurantList = () => {
 
   const [restaurantData, setRestaurantData] = useState([]);
-    const [error, setError] = useState(null);
+  //const [error, setError] = useState(null);
 
-  useEffect(() => {
+  const {data, error, isLoading } = useGetRestaurantsByIdQuery('')
+
+
+
+
+  // useEffect(() => {
     
-    fetch(
-      "https://fake-api-tau.vercel.app/api/efood/restaurantes")
-      .then((res) => {
-        if (!res.ok) {
-          throw new Error("Sem respostas do servidor :(")
-        }
+  //   fetch(
+  //     "https://fake-api-tau.vercel.app/api/efood/restaurantes")
+  //     .then((res) => {
+  //       if (!res.ok) {
+  //         throw new Error("Sem respostas do servidor :(")
+  //       }
         
-        return res.json()
-      })
-      .then((res) => setRestaurantData(res))
-      .catch((error) => setError(error))
-  }, []);
+  //       return res.json()
+  //     })
+  //     .then((res) => setRestaurantData(res))
+  //     .catch((error) => setError(error))
+  // }, []);
+
+
+
 
   if (error) {
     return <div>Erro: {error.message}</div>
   }
-  if (!restaurantData) {
+  if (isLoading) {
     return <LoaderCircle />;
   }
 
@@ -36,7 +44,7 @@ const RestaurantList = () => {
     <>
       <Lista>
         <div className="container">
-          {restaurantData.map((i) => (
+          {data.map((i) => (
             <div key={i.id}>
               <RestaurantCard
                 imagemLink={i.capa}
