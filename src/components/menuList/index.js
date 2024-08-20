@@ -35,7 +35,7 @@ const MenuList = () => {
     return <LoaderCircle />;
   }
 
-  //Verifica se cardapio é undefined e 
+  //Verifica se cardapio é undefined e se está vazio.
   
   if (!data.cardapio || data.cardapio.length === 0) {
     return <div>Sem menu disponível no momento.</div>;

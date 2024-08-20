@@ -1,38 +1,36 @@
-import { useDispatch } from "react-redux";
-import { addItem } from "../../reducers/carrinhoSlice";
-import { abre, fecha } from "../../reducers/abreCarrinhoSlice"
-import { Card, Titulo, Texto, Botao, Imagem, Fade, Modal } from "./styled";
-import { useState } from "react";
+import { useDispatch } from 'react-redux'
+import { addItem } from '../../reducers/carrinhoSlice'
+import { showCart, fecha } from '../../reducers/carrinhoFlowSlice'
+import { Card, Titulo, Texto, Botao, Imagem, Fade, Modal } from './styled'
+import { useState } from 'react'
 import fechar from '../../assets/close.svg'
 
 const MenuCard = ({ foto, preco, id, nome, descricao, porcao }) => {
-  const [modalOpen, setModalOpen]  = useState(false)
+  const [modalOpen, setModalOpen] = useState(false)
   const [selectedCard, setSelectedCard] = useState(null)
 
+  const dispatch = useDispatch()
 
-
-   const dispatch = useDispatch()
-
-    function handleAdicionar() {
-      dispatch(
-        addItem({
-          foto,
-          preco,
-          id,
-          nome,
-          descricao,
-          porcao
-        }),
-      );
-      dispatch(abre())
-      fechaModal()
-    }
+  function handleAdicionar() {
+    dispatch(
+      addItem({
+        foto,
+        preco,
+        id,
+        nome,
+        descricao,
+        porcao,
+      })
+    )
+    dispatch(showCart())
+    fechaModal()
+  }
 
   function abreModal(card) {
     setSelectedCard(card)
     setModalOpen(true)
   }
-  
+
   function fechaModal() {
     setModalOpen(false)
     setSelectedCard(null)
@@ -41,7 +39,7 @@ const MenuCard = ({ foto, preco, id, nome, descricao, porcao }) => {
   return (
     <>
       <Card>
-        <Imagem src={foto} alt="Restaurante" />
+        <Imagem src={foto} alt='Restaurante' />
 
         <Titulo>{nome}</Titulo>
 
@@ -56,18 +54,18 @@ const MenuCard = ({ foto, preco, id, nome, descricao, porcao }) => {
       </Card>
       {modalOpen && (
         <>
-        <Fade onClick={fechaModal}/>
-          
+          <Fade onClick={fechaModal} />
+
           <Modal>
-            <img onClick={fechaModal} id="fechar" src={fechar} alt="" />
+            <img onClick={fechaModal} id='fechar' src={fechar} alt='' />
             <div>
-              <img src={selectedCard.foto} alt="" />
+              <img src={selectedCard.foto} alt='' />
               <div>
                 <h3>{selectedCard.nome}</h3>
                 <p>{selectedCard.descricao}</p>
                 <p>{selectedCard.porcao}</p>
                 <button onClick={handleAdicionar}>
-                  Adicionar ao carrinho - R${" "}
+                  Adicionar ao carrinho - R${' '}
                   {parseFloat(selectedCard.preco).toFixed(2).replace('.', ',')}
                 </button>
               </div>
@@ -76,7 +74,7 @@ const MenuCard = ({ foto, preco, id, nome, descricao, porcao }) => {
         </>
       )}
     </>
-  );
-};
+  )
+}
 
-export default MenuCard;
+export default MenuCard
